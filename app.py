@@ -40,6 +40,9 @@ def analisis_estadistico(data):
 
     dict_numer = {}
     data_number = []
+    # Verificar si los datos son una lista
+    if not isinstance(data, list):
+        return 'Los datos no son una lista'
     # Verificar si la lista de datos esta vacia
     if data == []:
         return 'No hay datos en el archivo'
